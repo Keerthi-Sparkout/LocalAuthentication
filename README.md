@@ -2,10 +2,10 @@
 
 
 ### Features
-This feature for security considerations.
-Works with Apple Touch ID having devices.
-Predefined error handling when recognition fails.
-Automatic authentication with device Requirements
+- This feature for security considerations.
+- Works with Apple Touch ID having devices.
+- Predefined error handling when recognition fails.
+- Automatic authentication with device Requirements
 
 ### Requirements
 
