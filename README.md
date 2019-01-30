@@ -15,13 +15,13 @@ Xcode 9 with Swift 4
 # Error Handling
 
 There are various cases when biometric authentication can be failed.
-fallback
+- fallback
 Called when user clicks on provided fallback button.
-biometryNotEnrolled
+- biometryNotEnrolled
 Called when no fingerprints or face is registered with the device.
 You can show message to register a new face or fingerprint here.
 Default message will be shown if not provided.
-canceledByUser
+- canceledByUser
 Called when authentication canceled by user.
 canceledBySystem
 Called when authentication canceled by system when app goes into background or any other reason.
