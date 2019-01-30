@@ -42,5 +42,8 @@ Aleternatively you can ask user to enter device passcode to unlock biometry.
 - biometryNotAvailable
 Called when device does not support Touch ID authentication.
 
+### Screenshots
 
 ![](https://github.com/Keerthi-Sparkout/LocalAuthentication/blob/master/5CCEDE6C-574A-47DF-A268-F6DE9AE6D3D6.jpg)
+
+![](https://github.com/Keerthi-Sparkout/LocalAuthentication/blob/master/F02BE44A-9BC5-4927-B275-9F960BA5A925.jpg)
