@@ -1,19 +1,19 @@
 # LocalAuthentication
 
 
-# Features
+### Features
 This feature for security considerations.
 Works with Apple Touch ID having devices.
 Predefined error handling when recognition fails.
 Automatic authentication with device Requirements
 
-# Requirements
+### Requirements
 
 iOS 9.0+
 
 Xcode 9 with Swift 4
 
-# Error Handling
+### Error Handling
 
 There are various cases when biometric authentication can be failed.
 
