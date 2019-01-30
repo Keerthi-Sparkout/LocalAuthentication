@@ -10,13 +10,16 @@ Automatic authentication with device Requirements
 # Requirements
 
 iOS 9.0+
+
 Xcode 9 with Swift 4
 
 # Error Handling
 
 There are various cases when biometric authentication can be failed.
+
 - fallback
 Called when user clicks on provided fallback button.
+
 - biometryNotEnrolled
 Called when no fingerprints or face is registered with the device.
 You can show message to register a new face or fingerprint here.
