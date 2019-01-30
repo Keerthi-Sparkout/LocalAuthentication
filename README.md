@@ -40,4 +40,4 @@ Called when more than 5 failed attempts made using biometric authentication. Thi
 You'll restrict user when this error is occured.
 Aleternatively you can ask user to enter device passcode to unlock biometry.
 - biometryNotAvailable
-Called when device does not support Face ID or Touch ID authentication.
+Called when device does not support Touch ID authentication.
