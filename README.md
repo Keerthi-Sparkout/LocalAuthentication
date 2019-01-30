@@ -12,7 +12,7 @@ Automatic authentication with device Requirements
 iOS 9.0+
 Xcode 9 with Swift 4
 
-Error Handling
+# Error Handling
 
 There are various cases when biometric authentication can be failed.
 fallback
