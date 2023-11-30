@@ -69,7 +69,15 @@ extension ViewController {
                     
                 } else {
                     //TODO: User did not authenticate successfully, look at error and take appropriate action
-                    self.showErrorMessage(evaluateError: evaluateError)
+                    guard let error = evaluateError else {
+                        return
+                    }
+                    
+                    let alert = UIAlertController(title: "Alert", message: self.evaluateAuthenticationPolicyMessageForLA(errorCode: error._code), preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                    print(self.evaluateAuthenticationPolicyMessageForLA(errorCode: error._code))
+                    
                     //TODO: If you have choosen the 'Fallback authentication mechanism selected' (LAError.userFallback). Handle gracefully
                     
                 }
@@ -127,18 +135,6 @@ extension ViewController {
                 print(self.evaluateAuthenticationPolicyMessageForLA(errorCode: error.code))
             }
         }
-    }
-    
-    func showErrorMessage(evaluateError: Error?) {
-        guard let error = evaluateError else {
-            return
-        }
-        
-        let alert = UIAlertController(title: "Alert", message: self.evaluateAuthenticationPolicyMessageForLA(errorCode: error._code), preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-        print(self.evaluateAuthenticationPolicyMessageForLA(errorCode: error._code))
-        
     }
     
     func evaluatePolicyFailErrorMessageForLA(errorCode: Int) -> String {
